@@ -76,7 +76,7 @@ CORS_ALLOWED_ORIGINS = [
 
     "http://localhost:3000",
     "http://127.0.0.1:9000",
-    'https://frontend-uqeg.vercel.app'
+    'https://frontend-mu-ten-31.vercel.app'
     
 
 ]
