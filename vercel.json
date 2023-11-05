@@ -1,30 +1,4 @@
 {
-    "version":2,
-    "builds":[
-        {
-            "src":"backend/wsgi.py",
-            "use":"@vercel/python",
-            "config": {"maxLabdasize":"15mb", "runtime":"python3.8"}
-
-        },
-        {
-            "src":"build_files.sh",
-            "use":"@vercel/static_build",
-            "config":{
-                "distDir":"staticfiles_build"
-            }
-        }
-    ],
-    "routes":[
-        {
-            "src":"/static/(.*)",
-            "dest":"static/$1.py"
-        },
-        {
-            "src":"/(.*)",
-            "dest":"backend/wsgi.py"
-        }
-    ],
     "rewrites":[{
         "source":"/(.*)",
         "destination":"/"
