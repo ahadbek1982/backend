@@ -76,6 +76,8 @@ CORS_ALLOWED_ORIGINS = [
 
     "http://localhost:3000",
     "http://127.0.0.1:9000",
+    'https://frontend-uqeg.vercel.app'
+    
 
 ]
 CORS_ORIGIN_WHITELIST = ( 'https://backend-jet-nine.vercel.app/', 'https://frontend-uqeg.vercel.app/')
