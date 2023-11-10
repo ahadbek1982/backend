@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 #import dj_database_url
 
-import psycopg2
+
 from pathlib import Path
 #from decouple import config
 
@@ -27,8 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-e6i*6z&91r26l%!t&8n5f!-_dab1=a^*64_*npw770u!ym%7d9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
+DEBUG = False
 ALLOWED_HOSTS = ['.vercel.app','now.sh','127.0.0.1','localhost']
 
 # Application definition
@@ -113,12 +112,14 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER':'postgres',
-        'PASSWORD':'f*15aC5GfbCeFfD5EdFf3A1111D32fAF',
-        'HOST':'viaduct.proxy.rlwy.net',
-        'PORT':'25230',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': 'railway',
+        # 'USER':'postgres',
+        # 'PASSWORD':'f*15aC5GfbCeFfD5EdFf3A1111D32fAF',
+        # 'HOST':'viaduct.proxy.rlwy.net',
+        # 'PORT':'25230',
     }
 }
 #DATABASES['default'] = dj_database_url.config()
