@@ -1,7 +1,7 @@
 *.env
 bin/
 lib/
-*.sqlite3
+
 
 # .gitignore
 ### Python template
