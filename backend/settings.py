@@ -82,7 +82,7 @@ CORS_ALLOWED_ORIGINS = [
     
 
 ]
-CORS_ORIGIN_WHITELIST = (  'https://backend-jet-nine.vercel.app',"https://backend-jet-nine.vercel.app")
+CORS_ORIGIN_WHITELIST = (  'https://backend-six-dun.vercel.app',"https://backend-jet-nine.vercel.app")
 
 CORS_ALLOW_METHODS = (
     "DELETE",
