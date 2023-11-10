@@ -76,14 +76,14 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:9000",
     "http://10.142.54.80:3000",
-    'https://frontend-mu-ten-31.vercel.app',
-    'https://backend-six-dun.vercel.app'
+    'https://frontend-mu-ten-31.vercel.app'
+    
     
     
     
 
 ]
-CORS_ORIGIN_WHITELIST = (  'https://backend-six-dun.vercel.app',"https://backend-jet-nine.vercel.app",'https://frontend-mu-ten-31.vercel.app',)
+
 
 CORS_ALLOW_METHODS = (
     "DELETE",
