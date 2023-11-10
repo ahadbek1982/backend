@@ -115,14 +115,14 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        # 'ENGINE': 'django.db.backends.postgresql',
-        # 'NAME': 'railway',
-        # 'USER':'postgres',
-        # 'PASSWORD':'f*15aC5GfbCeFfD5EdFf3A1111D32fAF',
-        # 'HOST':'viaduct.proxy.rlwy.net',
-        # 'PORT':'25230',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER':'postgres',
+        'PASSWORD':'f*15aC5GfbCeFfD5EdFf3A1111D32fAF',
+        'HOST':'viaduct.proxy.rlwy.net',
+        'PORT':'25230',
     }
 }
 #DATABASES['default'] = dj_database_url.config()
